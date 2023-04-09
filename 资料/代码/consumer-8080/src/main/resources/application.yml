@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: abcmsc-consumer-depart
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8888
+      # 该配置能够使dashboard主动发现该应用
+      eager: true

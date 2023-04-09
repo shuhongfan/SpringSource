@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/00-eurekaserver-8000/pom.xml" />
+        <option value="$PROJECT_DIR$/02-provider-8081/pom.xml" />
+        <option value="$PROJECT_DIR$/02-consumer-8080/pom.xml" />
+        <option value="$PROJECT_DIR$/03-consumer-feign-8080/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-01-server-8000/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-02-provider-8081/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-03-consumer-8080/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-03-consumer-feign-8080/pom.xml" />
+        <option value="$PROJECT_DIR$/wrap-spring-boot-starter/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

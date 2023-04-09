@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: abcmsc-consumer-depart   # 微服务名称
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # 开启所有监控终端

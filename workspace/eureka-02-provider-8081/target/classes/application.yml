@@ -1,0 +1,48 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///test?useUnicode=true&amp;characterEncoding=utf8
+    username: root
+    password: 111
+
+  application:
+    name: abcmsc-provider-depart
+
+logging:
+  pattern:
+    console: level-%level %msg%n
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+    com.abc.provider: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  # 开启shutdown监控终端
+  endpoint:
+    shutdown:
+      enabled: true
+
+
